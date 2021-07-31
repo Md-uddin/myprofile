@@ -1,0 +1,24 @@
+*
+{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    --darkblue:#0c122f;
+}
+
+.skills
+{
+    width:100%;
+    height: 100vh;
+    background:var(--darkblue);
+    text-align:center;
+    border-top:2px solid purple;
+  
+
+}
+.skills span 
+{
+    color:grey;
+    font-size:2rem;
+
+}
