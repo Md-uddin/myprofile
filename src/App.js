@@ -1,10 +1,13 @@
-
-import './App.css';
-
+import './styles/Main.css';
+import Main from './Main';
+import Project from './Project';
+import Skills from './Skills';
 function App() {
   return (
     <div className="App">
-    <h1>Bismillah hirahman niraheem</h1>
+    <Main/>
+      <Project />
+      <Skills/>
     </div>
   );
 }
