@@ -1,34 +1,55 @@
-import React from 'react';
-import './styles/Skills.css';
-
+import React from "react";
+import "./styles/Skills.css";
+import Skilljson from "./objs/Skils";
+import skillname from "./objs/skillname";
 const Skills = () => {
-    google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawStuff);
-
-    function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['Year', 'Visitations', { role: 'style' }],
-            ['2010', 10, 'color: gray'],
-            ['2020', 14, 'color: #76A7FA'],
-            ['2030', 16, 'opacity: 0.2'],
-            ['2040', 22, 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
-            ['2050', 28, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2']
-        ])
-    }
-    
- 
-    return (
-        <div>
-            <section className="skills">
-                <h1><span>Expereince</span> <span>&</span> <span>Skills</span></h1>
-                {/* Charts  */}
-                <div className="charts">
-                    
-    
-            </div>
-        </section>
+  return (
+    <div>
+      <section className="skills&exper">
+        <div className="skills">
+          <h1>
+            <span>What </span> <span>i</span> <span>can do</span>
+          </h1>
+          {/* Charts  */}
+          <div className="charts">
+            {Skilljson.map((skil) => {
+              const { icon, name, description } = skil;
+              console.log(`./icons/${icon}`);
+              return (
+                <div className="box">
+                  <img src={`./icons/${icon}`} alt="" />
+                  <h1>{name}</h1>
+                  <p>{description}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
-    )
-}
+
+        {/* skills bar  */}
+        <div className="skillcharts">
+          <h1>skills progress</h1>
+                  <div className="skillsbar">
+                      <h1>Technical skills</h1>
+            {skillname.map((items) => {
+              const { name, width } = items;
+              return (
+                <div className="bar">
+                  <span>{name}</span>
+                  <div className="bgbar">
+                    <div className="innerbar"></div>
+                  </div>
+                </div>
+              );
+            })}
+                  </div>
+                  <div className="skillchart">
+
+                  </div>
+        </div>
+      </section>
+    </div>
+  );
+};
 
 export default Skills;
