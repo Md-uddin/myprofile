@@ -11,7 +11,48 @@
 .project
 {
     width:100%;
-    height:60rem;
+    height:70rem;
     background:var(--darkblue);
     border-top:1px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.project h1
+{
+    color:white;
+    font-size:2.5rem;
+    letter-spacing:4px;
+    word-spacing:1.5rem;
+    text-shadow:4px 2px rgb(138, 226, 229);
+}
+.allprojects
+{
+    display:grid;
+    place-items:center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:100%;
+    height:100%;
+    color:white;
+
+}
+.pr{
+        width:20rem;
+        height:15rem;
+        background:rgb(255, 255, 255);
+        border:10px solid white;
+        transition:.5s;
+       
+}
+.pr:hover{
+    transform: skewX(10deg); 
+}
+.pr img{
+    width:100%;
+    height:100%;
+}
+.pr img:hover
+{
+    filter:drop-shadow(10px 10px 10px white)
 }

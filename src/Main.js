@@ -3,10 +3,10 @@ import React from "react";
 const Main = () => {
   return (
     <div>
-      <section class="main">
-        <div class="main-div">
-          <div class="main-content">
-            <a href="">i'm mdName</a>
+      <section className ="main">
+        <div className ="main-div">
+          <div className ="main-content">
+            <a href="#skills">i'm mdName</a>
             <h1>a fullstack developer ...</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
