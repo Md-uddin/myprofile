@@ -1,17 +1,18 @@
 import React from "react";
 import "./styles/Skills.css";
 import Skilljson from "./objs/Skils";
+import Fade from 'react-reveal/Fade';
 
-const Skills = () => {
+const Skills = () => {  
   return (
     <div>
+      <Fade left>
       <section className="skills&exper">
         <div className="skills">
           <h1>
-            <span>What </span> <span>i</span> <span>can do</span>
+            What i can do
           </h1>
-          {/* Charts  */}
-          <div className="charts">
+          <div className="icon-box">
             {Skilljson.map((skil) => {
             
               const { icon, name, description,id } = skil;
@@ -27,9 +28,10 @@ const Skills = () => {
             }
           </div>
         </div>
-
+            
   
-      </section>
+        </section>
+        </Fade>
     </div>
   );
 };

@@ -11,9 +11,9 @@
 .project
 {
     width:100%;
-    height:70rem;
+    height:89rem;
     background:var(--darkblue);
-    border-top:1px solid white;
+    border-top:3px solid var(--skyblue);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -21,11 +21,12 @@
 }
 .project h1
 {
-    color:white;
+    color:var(--heading);
     font-size:2.5rem;
     letter-spacing:4px;
     word-spacing:1.5rem;
-    text-shadow:4px 2px rgb(138, 226, 229);
+    margin-top:1rem;
+
 }
 .allprojects
 {
@@ -40,19 +41,81 @@
 .pr{
         width:20rem;
         height:15rem;
-        background:rgb(255, 255, 255);
         border:10px solid white;
         transition:.5s;
+        margin:1rem;
+        margin-bottom:1px;
        
 }
 .pr:hover{
     transform: skewX(10deg); 
+    
+    filter:drop-shadow(10px 10px 10px rgb(104, 103, 103));
+}
+.pr h2
+{
+    margin:1rem;
+    word-spacing:.5rem;
+    letter-spacing:.2rem;
+    font-weight:500;
 }
 .pr img{
     width:100%;
     height:100%;
+    
 }
-.pr img:hover
+
+@media  screen and (max-width: 1150px)  and (min-width:750px){
+    .project 
+    {
+        height:90rem;
+    }
+    .project h1
+{ font-size:2rem; 
+    margin:0;}
+.allprojects
 {
-    filter:drop-shadow(10px 10px 10px white)
+    grid-template-columns: 1fr  1fr;
 }
+.pr{
+    width:21rem;
+    height:10rem;
+    border:10px solid white;
+    transition:.5s;
+    /* margin:1rem; */
+    margin-bottom:1px;
+    margin:0;
+}
+.pr h2 
+{
+    margin:0;
+    margin-top:5px;
+}
+}
+@media only screen and (max-width:750px) {
+    .project 
+    {
+        height:95rem;
+    }
+    .project h1
+{ font-size:2rem; 
+    margin:0;}
+.allprojects
+{
+    grid-template-columns: 1fr ;
+}
+.pr{
+    width:15rem;
+    height:7.5rem;
+    border:1px solid white;
+    margin-bottom:1px;
+    margin:0;
+}
+.pr h2 
+{
+    margin:0;
+    margin-top:5px;
+    font-size:1rem;
+}
+}
+

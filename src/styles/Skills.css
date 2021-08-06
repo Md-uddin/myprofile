@@ -1,47 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Orbitron&display=swap');
 
-/* font-family: 'Tourney', cursive; */
-
-*
-{
-    margin:0;
-    padding:0;
-    scroll-behavior: smooth;
-    --darkblue:#0c122f;
-font-family: 'Orbitron', sans-serif;
-}
 
 .skills
 {
     width:100%;
-    height:50rem;
+    height:60rem;
     background:var(--darkblue);
     text-align:center;
-    border-top:2px solid purple;
+    border-top:3px solid black;
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;
+    margin:0;
+    padding:0;
 
 }
-.skills span 
+.skills h1
 {
     color:grey;
-    font-size:2rem;
-
-}
-#barchart_values
-{
-    width: 200px;
-    height:400px;
+    font-size:2.4rem;
+    margin:1rem;
 
 }
 
-.charts
+
+.icon-box
 {
 
  width:80%;
- height:50rem;
+ height:60rem;
  color:white;
  font-family: 'Orbitron', sans-serif;
  font-weight:100;
@@ -50,35 +37,123 @@ font-family: 'Orbitron', sans-serif;
  grid-template-columns: 1fr 1fr 1fr;
  margin:2rem;
 }
-.charts .box 
+.icon-box .box 
 {
     width:20rem;
-    height:5rem;
+    height:6rem;
     font-size:.8rem;
     padding:1rem;
+    display:grid;
+    place-items:center;
 
 }
-.charts .box  img{
+.icon-box .box  img{
     width:5rem;
     height:5rem;
+    margin:1rem;
     background:var(--darkblue);
 }
-.charts .box h1 
+.icon-box .box h1
 {
     color:white;
     width:20rem;
-
+    margin:.5rem;
+    margin-top:0;
+    font-size:1.5rem;
+    font-weight:500;
+    letter-spacing:3px;
+    word-spacing:.4rem;
 }
-.skillcharts .top 
-{
-    position:absolute;
-    top:0;
-    left:50%;
-    right:50%;
-    margin:1.5rem;
-    color:white;
-    width:10rem;
-    text-shadow:1px 1px rgb(9, 163, 142);
-    letter-spacing:2px;
-    width:19rem;
+.icon-box .box p 
+{   
+    
+    font-size:1rem;
+    word-spacing:.2rem;
+    color:var(--darkpink)
+}
+@media only screen and (max-width:1400px) and (min-width:650px){
+    .skills {
+        height:72rem;
+     
+    }
+    .skills h1 {
+        font-size:2rem;
+     margin:0;
+     padding:0;
+    }
+    .icon-box {
+        grid-template-columns: 1fr 1fr;
+        margin:1rem;
+        width:95%;
+        height:90%;
+    }
+    .icon-box .box {
+        margin:0;
+        width:16rem;
+        height:14rem;
+        font-size:.8rem;
+        display:grid;
+        place-items:center;
+    }
+    .icon-box .box h1 {
+        font-size:1rem;
+        margin:0;
+        margin-top:0;
+        margin-bottom:0;
+
+    }
+    .icon-box .box img {
+        width:3rem;
+        height:3rem;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .icon-box .box p {
+        font-size:1rem;
+        word-spacing:1px;
+        margin-top:0;
+        margin-bottom:0;
+    }
+}
+@media only screen and (max-width:650px){
+    .skills {
+        height:92rem;
+     
+    }
+    .icon-box {
+        grid-template-columns: 1fr ;
+        margin:1rem;
+        width:90%;
+        height:90%;
+        display:grid;
+        place-items:center;
+    }
+    .icon-box .box {
+        margin:0;
+        width:5rem;
+        height:12rem;
+        font-size:.8rem;
+        display:grid;
+        place-items:center;
+    }
+    .icon-box .box h1 {
+        font-size:1rem;
+        margin:0;
+        margin-top:0;
+        margin-bottom:0;
+
+    }
+    .icon-box .box img {
+        width:2.5rem;
+        height:2.5rem;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .icon-box .box p {
+        font-size:.8rem;
+        word-spacing:1px;
+        margin-top:0;
+        margin-bottom:0;
+    }
+
 }

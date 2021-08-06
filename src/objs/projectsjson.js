@@ -33,16 +33,6 @@ const projectjson = [
         title: 'React project',
         id: 7,
         src:"img/contact.js"
-    },
-    {
-        title: 'old project',
-        id: 8,
-        src:"img/contact.js"
-    },
-    {
-        title: 'NEw project',
-        id: 9,
-        src:"img/contact.js"
-    },
+    }
 ]
 export default projectjson;

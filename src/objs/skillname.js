@@ -8,12 +8,20 @@ const skillname= [
         score: '86%',
     },
     {
+        name: "JavaScript",
+        score: '87%'
+    },
+    {
+        name: "Wordpress",
+        score: '67%'
+    },
+    {
         name: "React",
-        score: '70%',
+        score: '75%',
     },
     {
         name: "mongoDB",
-        score: '55%',
+        score: '74%',
     },
     {
         name: "Nodejs",
@@ -21,7 +29,7 @@ const skillname= [
     },
     {
         name: "Expressjs",
-        score: '75%',
+        score: '64%',
     },
 ]
 export default skillname;

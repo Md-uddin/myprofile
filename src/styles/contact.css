@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Orbitron&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Orbitron&display=swap'); */
 
 /* font-family: 'Tourney', cursive; */
 
@@ -15,25 +15,25 @@ font-family: 'Orbitron', sans-serif;
     width:100%;
     height:45rem;
     background:url('../img/Contact.jpg');
-    /* background:var(--darkblue); */
     background-position:center;
     background-size:cover;
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;
- 
+
 }
 .contact h1 
 {   
     font-size:4.55rem;
     margin:3rem;
     margin-top:.5rem;
-    color:rgb(25, 172, 240);
-    z-index:100;
+    color:var(--skyblue);
     word-spacing:1rem;
     letter-spacing:10px;
     text-shadow:10px 2px rgb(0, 0, 0);
+    font-weight:700;
+   
 }
 .contactform
 {
@@ -49,11 +49,11 @@ font-family: 'Orbitron', sans-serif;
     height:30rem;
     background:linear-gradient(315deg,black,#0c122f,#3b3f55,#0c122f,#3b3f55,white);
     backdrop-filter: blur(4rem);
-    /* background:pink; */
     text-align:center;
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
     border-radius:1rem;
     color:white;
     transform:skewX(2px) skewY(1rem);
@@ -90,13 +90,78 @@ font-family: 'Orbitron', sans-serif;
 {
     text-shadow:2px 1px rgb(45, 178, 196);
     font-weight:300;
-    /* letter-spacing:1px; */
 }
+.output .media-icons {
+    width:25rem;
+    height:5rem;
+    margin-top:6rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+.output .media-icons .lkd 
+{
+    width:7rem;
+    height:7rem;
+    background:linear-gradient(to left  ,white,rgb(59, 110, 221) );
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    color:rgb(0, 0, 0);
+    font-weight:500;
+   
+   
+}
+.output .media-icons .lkd:hover
+{
+    filter: drop-shadow(2px 10px 1px gray);
+    transform:translateY(-10px);
+    letter-spacing: 2px;
+}
+.lkd a {
+    width:3rem;
+    height:3rem;
+    background-image:url('../media-icons/linkdin.svg');
+    background-position:center;
+    background-size:cover;
+    
+}
+.output .media-icons .git 
+{
+   
+    width:7rem;
+    height:7rem;
+    background:linear-gradient(to left  ,white,rgb(59, 110, 221) );
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    color:rgb(0, 0, 0);
+    font-weight:500;
+}
+.output .media-icons .git:hover
+{
+    filter: drop-shadow(2px 10px 1px gray);
+    transform:translateY(-10px);
+    letter-spacing: 2px;
+}
+.git a {
+    width:3rem;
+    height:3rem;
+    background-image:url('../media-icons/github.svg');
+    background-position:center;
+    background-size:cover;
+}
+        
+
+      /* input  */
 .input{
     width:40rem;
     height:30rem;
-    /* background:var(--darkblue); */
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -142,7 +207,7 @@ textarea
   border-radius:1rem;
   margin-left:50%;
 
-  background:rgb(25, 172, 240);
+  background:rgb(43, 176, 199);
   font-size:1.2rem;
   letter-spacing:1px;
   cursor:pointer;
@@ -155,13 +220,136 @@ textarea
     letter-spacing:2px;
     font-weight:400;
     background:rgb(100, 248, 248);
+    filter:drop-shadow(2px 6px 2px grey);
+    transform:translateY(-5px);
     color:rgb(0, 0, 0);
 
 }
-/* .overlay
-{
-    width:30rem;
-    height:20rem;
-    background:oldlace;
+@media only screen and (max-width:1150px) and (min-width:568px) {
 
-} */
+    .contact h1  {
+            font-size:3rem;
+        }
+        .output {
+            width:20rem;
+            overflow:hidden;
+            
+        }
+    .output h2 
+    {
+        font-size:1.4rem;
+    }
+   .output .media-icons .lkd 
+    {
+        width:6rem;
+        height:6rem;
+        margin-left :2rem;
+    }
+    .output .media-icons .git {
+        width:6rem;
+        height:6rem;
+        margin-right :2rem;
+    
+    }
+    form {
+        width:20rem;
+    }
+        .input 
+        {
+            width:25rem;
+            overflow:hidden;
+            font-size:1.2rem;
+           
+        }
+        .input input 
+        {
+            width:22rem;
+            height:2rem;
+        }
+       textarea {
+            width:23rem;
+            height:8rem;
+        }
+        label {
+            margin:2rem;
+        }
+}
+@media only screen and (max-width:568px){
+    .contact{
+        height:50rem;
+    }
+    .contactform {
+        flex-direction:column-reverse;
+        overflow:hidden;
+        justify-content: space-around;
+        align-items: center;
+        margin:0;
+    }
+
+    .contact h1  {
+        font-size:1.9rem;
+        width:23rem;
+        word-spacing:1px;
+        margin: 0 auto;
+        margin-bottom:1rem;
+    }
+    .output {
+        width:20rem;
+        overflow:hidden;
+        height:20rem;
+        margin-top:1rem;
+        display:grid;
+        place-items :center;
+    }
+.output h2 
+{ 
+    font-size:1.2rem;
+}
+.output .media-icons {
+    margin-top:0;
+}
+.output .media-icons .lkd 
+{
+    width:6rem;
+    height:6rem;
+    margin:0;
+    margin-left :2rem;
+    
+}
+.output .media-icons .git {
+    width:6rem;
+    height:6rem;
+    margin-right :2rem;
+    margin:0;
+
+}
+
+    /* input  */
+    form {
+        width:20rem;
+        color:rgb(247, 0, 255);
+    }
+    .input 
+    {
+        width:20rem;
+        overflow:hidden;
+        font-size:1.2rem;
+       
+    }
+    .input input 
+    {
+        width:18rem;
+        height:2rem;
+    }
+    .input button {
+        background:blueviolet;
+    }
+   textarea {
+        width:20rem;
+        height:7rem;
+    }
+    label {
+        margin:2rem;
+    }
+
+}

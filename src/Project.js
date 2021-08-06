@@ -1,12 +1,14 @@
 import React from 'react'
 import './styles/Project.css'
 import projectjson from './objs/projectsjson'
-
+import Rotate from 'react-reveal/Rotate';
 const Project = () => {
   
-  
+   
     return (
         <div>
+           
+            <Rotate>
             <section className='project'>
                 <h1>Recent Work</h1>
                 <div className="allprojects">
@@ -26,8 +28,9 @@ const Project = () => {
         })
     }
                 </div>
-            </section>
-        
+                </section>
+                </Rotate>
+         
             </div>
     )
 }
