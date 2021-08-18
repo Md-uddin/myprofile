@@ -45,7 +45,8 @@ font-family: 'Orbitron', sans-serif;
 }
 .output
 {
-    width:35rem;
+    
+    width:50rem;
     height:30rem;
     background:linear-gradient(315deg,black,#0c122f,#3b3f55,#0c122f,#3b3f55,white);
     backdrop-filter: blur(4rem);
@@ -85,11 +86,19 @@ font-family: 'Orbitron', sans-serif;
 .output h2{
     font-size:2.5rem;
     font-weight:200;
+    text-decoration: none;
+    list-style: none;
+    color:white;
+}
+.a {
+    text-decoration: none;
+    list-style:none;
 }
 .output h2:hover 
 {
     text-shadow:2px 1px rgb(45, 178, 196);
     font-weight:300;
+    letter-spacing: 2px;
 }
 .output .media-icons {
     width:25rem;
@@ -159,7 +168,7 @@ font-family: 'Orbitron', sans-serif;
         
 
       /* input  */
-.input{
+/* .input{
     width:40rem;
     height:30rem;
     display:flex;
@@ -193,6 +202,7 @@ textarea
 {
     font-size:20px;
     font-weight:500;
+    width:20rem;
 }
 #description
 {
@@ -224,7 +234,7 @@ textarea
     transform:translateY(-5px);
     color:rgb(0, 0, 0);
 
-}
+} */
 @media only screen and (max-width:1150px) and (min-width:568px) {
 
     .contact h1  {
@@ -235,9 +245,14 @@ textarea
             overflow:hidden;
             
         }
+        .output{
+            width:35rem;
+        }
     .output h2 
     {
         font-size:1.4rem;
+        text-decoration: none;
+    list-style: none;
     }
    .output .media-icons .lkd 
     {
@@ -251,32 +266,32 @@ textarea
         margin-right :2rem;
     
     }
-    form {
+    /* form {
         width:20rem;
     }
         .input 
         {
-            width:25rem;
+            width:26rem;
             overflow:hidden;
             font-size:1.2rem;
            
         }
         .input input 
         {
-            width:22rem;
+            max-width:22rem;
             height:2rem;
         }
        textarea {
-            width:23rem;
+           max-width:23rem;
             height:8rem;
         }
         label {
             margin:2rem;
-        }
+        } */
 }
 @media only screen and (max-width:568px){
     .contact{
-        height:50rem;
+        height:35rem;
     }
     .contactform {
         flex-direction:column-reverse;
@@ -325,7 +340,7 @@ textarea
 }
 
     /* input  */
-    form {
+    /* form {
         width:20rem;
         color:rgb(247, 0, 255);
     }
@@ -350,6 +365,6 @@ textarea
     }
     label {
         margin:2rem;
-    }
+    } */
 
 }

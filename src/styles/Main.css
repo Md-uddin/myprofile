@@ -14,7 +14,7 @@
     scroll-behavior: smooth;
     --darkblue:#0c122f;
     --skyblue:#00ccff;
-    --darkpink:#d400d4;
+    --darkpink:#c703c7;
     --heading:grey;
     
 }
@@ -108,7 +108,7 @@
 .main-content p
 {
   margin-top:2rem;
-  color:rgb(92, 17, 121);
+  color:rgb(196, 11, 171);
   position:absolute;
   top:13rem;
   right:1rem;

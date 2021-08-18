@@ -11,7 +11,7 @@ const Copyright = () => {
     }
     return (
         <div style={mystyle}>
-            <p> copyright &copy; Inc. All Right Reserved. </p>
+            <p> copyright &copy; Inc. All Right Reserved to md uddin. </p>
         </div>
     )
 }

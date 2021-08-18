@@ -45,7 +45,7 @@
     padding:1rem;
     display:grid;
     place-items:center;
-
+    color:rgb(196, 11, 171)
 }
 .icon-box .box  img{
     width:5rem;
@@ -69,7 +69,8 @@
     
     font-size:1rem;
     word-spacing:.2rem;
-    color:var(--darkpink)
+    /* color:var(--darkpink); */
+    color:rgb(196, 11, 171);
 }
 @media only screen and (max-width:1400px) and (min-width:650px){
     .skills {

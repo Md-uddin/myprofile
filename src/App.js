@@ -1,6 +1,6 @@
 import {
   BrowserRouter as Router, Switch,Route} from 'react-router-dom';
-import { useState,useEffect } from 'react';
+
 import './styles/Main.css';
 import Main from './Main';
 import Project from './Project';
@@ -8,12 +8,14 @@ import Skills from './Skills';
 import Skillbar from './skillbar';
 import Contact from './contact';
 import Overlay from './overlay';
-import Copyright from './copyright';
+    //projects 
+// import Project1 from './projects detail/project1/Project1';
+// import Copyright from './copyright';
 
 
 
 function App() {
-  const [ overlay, setOverlay ] = useState("true");
+
 
   return (
 
@@ -22,7 +24,7 @@ function App() {
       <Route path="/" exact component={Overlay}></Route>
               
       <Route path="/myweb" exact component={() => {
-        return   <Main />
+        return <Main />
             
       }}></Route>
       <Route path="/myweb" exact component={() => {
@@ -30,24 +32,44 @@ function App() {
       }}></Route>
               
       <Route path="/myweb" exact component={() => {
-          return <Project />
+        return <Project />
         
       }}></Route>
- <Route path="/myweb" exact component={() => {
+      <Route path="/myweb" exact component={() => {
         return <Skillbar />
       }}></Route>
 
-<Route path="/myweb" exact component={() => {
+      <Route path="/myweb" exact component={() => {
         return <Contact />
       }}></Route>
 
-<Route path="/myweb" exact component={() => {
+      {/* <Route path="/myweb" exact component={() => {
         return <Copyright />
+      }}></Route> */}
+      {/* all projects  */}
+      {/*
+      <Route path="/myweb/project1" exact component={() => {
+        return   <Project1 />
+            
       }}></Route>
-    </Router>
+
+<Route path="/myweb/project2" exact component={() => {
+        return   <Contact />
+            
+      }}></Route>
+        <Route path="/myweb/project3" exact component={() => {
+        return   <Main />
+            
+      }}></Route>
+        <Route path="/myweb/project4" exact component={() => {
+        return   <Skills />
+            
+      }}></Route>
+  
      
-    
-  );
+    */}
+        </Router>
+  )
 
   
 }
