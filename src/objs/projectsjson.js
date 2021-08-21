@@ -1,28 +1,38 @@
 const projectjson = [
-    {
-        title: 'React project',
+    { 
+        title: 'Contact Manager App',
         id: 1,
         src:"../img/Contact.jpg"
-    },
-    {
-        title: 'React project',
+    },{
+        title: 'Sigup & login authentication',
         id: 2,
         src:"img/contact.js"
     },
+
     {
-        title: 'todo list project',
+        title: 'Simple affliate website',
         id: 3,
         src:"img/contact.js"
     },
     {
-        title: 'React project',
+        title: 'Blog webiste',
         id: 4,
         src:"img/contact.js"
     },
     {
-        title: 'React project',
+        title: 'basic protfolio website',
         id: 5,
         src:"img/contact.js"
-    }
+    },
+    {
+        title: 'Todos List App',
+        id: 6,
+        src:"img/contact.js"
+    },
+    {
+        title: 'Ecomerce website',
+        id: 7,
+        src:"img/contact.js"
+    },
 ]
 export default projectjson;
