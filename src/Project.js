@@ -11,8 +11,8 @@ const Project = () => {
           <h1>Recent Work</h1>
           <div className="allprojects">
             {projectjson.map((project) => {
-                const { id, src, title } = project;
-              const link = `http://project${ id }.mduddin.website`
+                const { id, src, title,link } = project;
+
               const img =   `./projects/project${id}.png`
               return (
                 <div className="pr" key={id}>
