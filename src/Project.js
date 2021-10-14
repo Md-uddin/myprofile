@@ -16,7 +16,7 @@ const Project = () => {
               const img =   `./projects/project${id}.png`
               return (
                 <div className="pr" key={id}>
-                  <a href={link}>
+                  <a href={link} target="_blank" >
                     {/* <img src="./icons/react.png" alt="" /> */}
                     <img src={img} alt="" />
                     </a>

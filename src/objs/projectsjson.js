@@ -1,51 +1,45 @@
 const projectjson = [
     { 
-        title: 'Contact Manager App',
+        title: 'A multi store ecommerce website',
         id: 1,
         src: "../img/Contact.jpg",
-        link:"http://project1.mduddin.website"
+        link:"https://desolate-bayou-79055.herokuapp.com/"
     },{
-        title: 'Sigup & login authentication',
+        title: 'Todo list app',
         id: 2,
         src: "img/contact.js",
-        link:"http://project1.mduddin.website"
+        link:"https://compassionate-bartik-f1523f.netlify.app/"
         
     },
  
     {
-        title: 'multi-store Ecommerce website',
+        title: 'Crud application',
         id: 3,
         src: "img/contact.js",
-        link:"https://desolate-bayou-79055.herokuapp.com/"
+        link:"https://blogs-crudapplication.herokuapp.com/"
         
     },
     {
-        title: 'Blog webiste',
+        title: 'movie app',
         id: 4,
         src: "img/contact.js",
-        link:"http://project1.mduddin.website"
+        link:"https://harrypotermovie.netlify.app/"
         
     },
     {
-        title: 'basic protfolio website',
+        title: 'Contact manager',
         id: 5,
         src: "img/contact.js",
-        link:"http://project1.mduddin.website"
+        link:"https://quizzical-swanson-6c9dd4.netlify.app/"
         
     },
     {
-        title: 'Todos List App',
+        title: 'crypto currency',
         id: 6,
         src: "img/contact.js",
-        link:"http://project1.mduddin.website"
+        link:"https://zen-saha-a5d9ee.netlify.app/"
         
     },
-    {
-        title: 'Service website',
-        id: 7,
-        src:"img/contact.js",
-        link:"http://project1.mduddin.website"
-
-    },
+   
 ]
 export default projectjson;

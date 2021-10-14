@@ -1,9 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./styles/skillbar.css";
 import skillname from "./objs/skillname";
 import Skillchart from "./objs/skillchart";
 import Wobble from 'react-reveal/Wobble';
+
 const Skillbar = () => {
+
   return (
 
 
@@ -42,21 +44,20 @@ const Skillbar = () => {
               strokeDashoffset: `calc(380 - ( 380 * ${ circle.percent }) / 100 )`,
               cy: "63", cx: "65", r: "60"
             }
-            if (window.innerWidth < 1650) {
-            console.log('inner small style')
-              innerstyle=innerSmallStyle
-            } else  {
-            innerstyle = innerlargestyle;
-            console.log('inner large style')
-            }
-          
-           
-   
-          console.log (innerstyle)
-            
-                
+            const adjustchart = () => {
               
-            
+              if (window.innerWidth < 1650) {
+   
+                innerstyle=innerSmallStyle
+              } else  {
+              innerstyle = innerlargestyle;
+              
+              }
+            }
+            adjustchart();
+          
+         
+    {window.addEventListener("resize",adjustchart())}
                 
             return(
             
@@ -78,8 +79,8 @@ const Skillbar = () => {
         <h1 className="h1">Professional Skills</h1>
         </div>
         </Wobble>
-    
     </div>
+    
   );
 };
 
